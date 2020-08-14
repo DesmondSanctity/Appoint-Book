@@ -50,8 +50,8 @@ const styles = (theme) => ({
     right: 0,
   },
   form: {
-    width: "98%",
-    marginLeft: 13,
+    width: "50%",
+    marginLeft: 350,
     marginTop: theme.spacing(3),
   },
   toolbar: theme.mixins.toolbar,
@@ -332,8 +332,8 @@ class Todo extends Component {
                     name="body"
                     autoComplete="todoDetails"
                     multiline
-                    rows={25}
-                    rowsMax={25}
+                    rows={10}
+                    rowsMax={10}
                     helperText={errors.body}
                     error={errors.body ? true : false}
                     onChange={this.handleChange}
